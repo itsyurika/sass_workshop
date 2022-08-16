@@ -1,0 +1,21 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+.button {
+  border-radius: 4px;
+  border-style: none;
+  padding: 8px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #d7effc;
+  color: #165c82;
+  font-weight: bold;
+}
+
+.button.danger-button {
+  background: #fcdad7;
+  color: #821616;
+}
+.button.warning-button {
+  background: #fcf0d7;
+  color: #825316;
+}

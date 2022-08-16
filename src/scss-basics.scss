@@ -1,0 +1,37 @@
+// Here are a couple of useful
+// things you can do in sass
+
+// Variables - they work just like javascript
+$danger: crimson;
+
+// Mixins - are used to create reusable blocks of css code
+@mixin flex( $align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// Extending - You can share css properties from one class to another
+// by extending it
+
+// The % symbol means this is a placeholder class.
+// Thats a sepcial type of class that doesn't get compiled by sass
+%button {
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: gainsboro;
+}
+.danger-button {
+  @extend %button;
+  background: crimson;
+}
+.success-button {
+  @extend %button;
+  background: green;
+}
+
+// Lists
+
+
+// Loops
